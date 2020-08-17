@@ -1,0 +1,74 @@
+
+/*owl one  */
+#owl-one .owl-stage-outer{
+    height: 724px;
+    border-radius: 5px;
+}
+#owl-one .owl-item{
+    width: 1200px;
+}
+#owl-one .owl-dot {
+    display: inline;
+	counter-increment: slides-num;
+    margin-right: 5px;
+}
+	
+#owl-one .owl-dot.active {
+	content:  counter(slides-num);
+	display: inline;
+	vertical-align: middle;
+    font-size: 20px;
+    color: #000;
+}
+#owl-one .owl-prev {
+    margin-left: 20px;
+    outline: none;
+}
+#owl-one .owl-next {
+    margin-left: 20px;
+    outline: none;
+}
+@media screen and (max-width: 375px){
+    #owl-one{
+        width: auto;
+    }
+    #owl-one .owl-nav{
+        display: none;
+    }
+   
+}    
+    
+/*owl two  */
+#owl-two .owl-item {
+    opacity: 0.5;
+    transform: scale(0.7, 0.7);  
+} 
+#owl-two .owl-item.active.center {
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: ease-out;
+    transition-duration: 1s;
+}
+
+#owl-two .owl-nav {
+    margin: 20px 0 20px 0;
+}
+#owl-two .owl-nav .owl-prev {
+    margin-right: 20px;
+    outline: none;
+}
+#owl-two .owl-nav .owl-next {
+    margin-left: 20px;
+    outline: none;
+}
+.carousel-count {
+    color: black;
+}
+@media screen and (max-width: 375px){
+    #owl-two .owl-nav{
+        margin: 15px 0 0 0;
+    }
+
+}
+
+
